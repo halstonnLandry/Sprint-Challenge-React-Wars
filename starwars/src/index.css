@@ -5,3 +5,7 @@ body {
   background-image: url('./sw-bg.jpg');
   background-repeat: no-repeat;
 }
+
+ button:hover{
+    text-decoration: line-through;
+  }

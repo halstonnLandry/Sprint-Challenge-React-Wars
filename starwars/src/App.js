@@ -1,20 +1,9 @@
 import React,{useState,useEffect} from 'react';
 import './App.css';
-import axios from 'axios';
 import styled from 'styled-components';
+import Obj from './components/Obj.js';
 
 const App = () => {
-    const [data, setData]= useState ([]);
-   useEffect(()=>{
-    axios.get("https://swapi.co/api/people")
-    .then(response=>{
-      setData(response.data);
-      console.log(response.data);
-    })
-    .catch(error=>{
-      console.log(error);
-    });
-   },[])
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
 
@@ -30,10 +19,24 @@ box-shadow: 0 0 25px #ffff00;
 border-radius: 20px;
 margin: 20px;
 `
+const Left=styled.section`
+width:50%;
+box-shadow:inset 0 0 50px #000000;
+height:100%;
+`
+const Right=styled.section`
+width:50%;
+height:100%;
+box-shadow:inset 0 0 50px #000000
+`
   return (
 
     <div className="App">
       <H1 className="Header">React Wars</H1>
+<div className='columns'>
+  <Obj/>
+</div>
+
     </div>
   );
 }

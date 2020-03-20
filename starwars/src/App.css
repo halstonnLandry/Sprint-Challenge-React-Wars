@@ -6,6 +6,30 @@
   text-shadow: 1px 1px 5px #fff;
 }
 .body{
-  background: no-repeat
+  background: no-repeat;
+  background-color: #000000;
+}
+.columns{
+  display:flex;
+  justify-content:space-evenly;
+  height: 80vh;
+}
+.names{
+  display:flex;
+  flex-direction: column;
+  }
+.name{
+  text-shadow:0 0 15px #000000;
+  color:#ffff00;
+  border-color:#ffff00;
+  font-weight: 800;
+  font-size: larger;
+  margin:10px;
+  background-color: #00000050;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px #ffff00;
+}
+.object{
+  display:flex;
 }
 /* write your parent styles in here for your App.js */
